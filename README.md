@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Clone the repo, install node modules in the folder and you are good to go. 
+### Use the command "yarn start" to run the prjoect in your browser.
+
 ## Available Scripts
 
 In the project directory, you can run:
