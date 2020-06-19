@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+
+html{
+  background: rgb(51, 69, 82);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+body{
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  text-align: center;
+  width: 100vw;
+  padding: 0;
+  margin-top: 0;
+}
+
+header{
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+}
+h1{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 2%;
+}
+h2{
+  font-size: 15px;
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9";
+    gap: 1% 1%;
+  height: 70vh;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  justify-content: center;
+  align-content: center;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item1{ grid-area: "item1";}
+.item2{ grid-area: "item2";}
+.item3{ grid-area: "item3";}
+.item4{ grid-area: "item4";}
+.item5{ grid-area: "item5";}
+.item6{ grid-area: "item6";}
+.item7{ grid-area: "item7";}
+.item8{ grid-area: "item8";}
+.item9{ grid-area: "item9";}
+
+.grid-container div{
+  text-align: center;
+  background-color: rgba(151, 168, 185, .2);
+  line-height: 70px;
+}
+.grid-container div:hover{
+  background: #eee;
+  color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grid-container > div{
+  width: 70px;
+  height: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+#playerTurn{
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#start{
+  padding: 5px;
+  font-size: 10px;
+  margin: 0 auto;
+  
 }
+
+#reset{
+  display: none;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+
+@media screen and (min-width: 600px){
+  .App {
+    text-align: center;
+  }
+  html{
+    background: rgb(51, 69, 82);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 0;
+  }
+  
+  header{
+    text-align: center;
+    height: 20vh;
+  }
+  h1{
+    text-align: center;
+    color: #fff;
+    font-size: 200%;
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+  h2{
+    font-size: 150%;
+  }
+  
+  .grid-container{
+    display: grid;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9";
+    gap: 1.4% 1%;
+    height: 380px;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    justify-content: center;
+    align-content: center;
+    pointer-events: none;
+  }
+
+  .item1{ grid-area: "item1";}
+.item2{ grid-area: "item2";}
+.item3{ grid-area: "item3";}
+.item4{ grid-area: "item4";}
+.item5{ grid-area: "item5";}
+.item6{ grid-area: "item6";}
+.item7{ grid-area: "item7";}
+.item8{ grid-area: "item8";}
+.item9{ grid-area: "item9";}
+  
+  .grid-container > div{
+    line-height: 100px;
+    background-color: rgba(151, 168, 185, .2);
+  }
+  .grid-container div:hover{
+    background: #eee;
+    color: #000;
+  }
+  
+  .grid-container > div{
+    width: 90px;
+    height: 90px;
+  }
+  
+  #playerTurn{
+    display: none;
+  }
+  
+  #start{
+    padding: 5px;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  #reset{
+    display: none;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+}
+  
